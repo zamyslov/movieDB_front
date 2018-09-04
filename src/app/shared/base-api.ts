@@ -4,7 +4,7 @@ import {Observable} from 'rxjs';
 
 @Injectable()
 export class BaseApi {
-  private baseUrl = 'http://localhost:3000/';
+  private baseUrl = 'http://localhost:8080/';
 
   constructor(public http: HttpClient) {
   }
@@ -13,7 +13,7 @@ export class BaseApi {
     return this.baseUrl + url;
   }
 
-  public get(url: string = ''): Observable<any> {
+  public get(url: string = '', data: any = {}): Observable<any> {
     return this.http.get(this.getUrl(url));
   }
 
