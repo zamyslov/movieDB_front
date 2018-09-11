@@ -13,6 +13,13 @@
       "password": "12345678",
       "name": "Олег",
       "role": "User"
+    },
+    {
+      "login": "zamyslov",
+      "password": "555555",
+      "name": "Олег",
+      "role": "User",
+      "id": 3
     }
   ]
 }

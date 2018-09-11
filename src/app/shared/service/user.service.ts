@@ -28,7 +28,14 @@ export class UserService extends BaseApi {
     //     }
     //   }));
 
-    return this.get(`users?login=${login}`).pipe(map((user: User[]) => user[0] ? user[0] : undefined));
+    return this.getByLogin(login);
+  }
 
+  public getByLogin(login: string): Observable<any> {
+    return this.get(`users?login=${login}`).pipe(map((user: User[]) => user[0] ? user[0] : undefined));
+  }
+
+  public createNewUser(user: User): Observable<any> {
+    return this.post(`users`, user);
   }
 }
