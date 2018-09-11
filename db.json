@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "Admin",
+      "password": "12345678",
+      "name": "Администратор",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "login": "Oleg",
+      "password": "12345678",
+      "name": "Олег",
+      "role": "User"
+    }
+  ]
+}
