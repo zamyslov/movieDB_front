@@ -38,4 +38,8 @@ export class UserService extends BaseApi {
   public createNewUser(user: User): Observable<any> {
     return this.post(`users`, user);
   }
+
+  public updateUser(user: User): Observable<any> {
+    return this.put(`users/${user.id}`, user);
+  }
 }

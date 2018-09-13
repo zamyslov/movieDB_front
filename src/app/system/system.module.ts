@@ -7,6 +7,7 @@ import {HeaderComponent} from './shared/component/header/header.component';
 import {DropdownDirective} from './shared/directives/dropdown.directive';
 import {MoviesComponent} from './movies/movies.component';
 import {SystemRoutingModule} from './system.routing.module';
+import {ProfileComponent} from './profile/profile.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule, SystemRoutingModule],
@@ -15,7 +16,8 @@ import {SystemRoutingModule} from './system.routing.module';
     SidebarComponent,
     HeaderComponent,
     DropdownDirective,
-    MoviesComponent
+    MoviesComponent,
+    ProfileComponent
   ],
   providers: []
 })
